@@ -1,0 +1,160 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+    color: #2d3c49;
+}
+
+.body {
+    max-width: 1100px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.logo-container {
+    width: 50%;
+}
+
+.logo {
+    width: 25%;
+}
+
+.header {
+    width: 50%;
+    display: inline-block;
+}
+
+.top {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 3px solid #7d97ad;
+}
+
+.name {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.title {
+    display: flex;
+    justify-content: flex-end; 
+    font-style: italic;
+}
+
+.name {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.hero {
+    width: 100%;
+    
+}
+
+.hero-container {
+    margin-top: 10px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.middle {
+    color: #7d97ad;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+}
+
+.thumbnail-container {
+    max-width: 320px;
+}
+
+.thumbnails {
+    width: 100%;
+}
+
+.image-container {
+    height: 150px;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #2d3c49;
+}
+
+@media only screen and (max-width: 1005px) and (min-width: 820px) {
+    .bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .thumbnail-container {
+        width: 100%;
+        max-width: 800px;
+    }
+}
+
+@media only screen and (max-width: 819px) and (min-width: 462px) {
+    .logo-container {
+        width: 40%;
+    }
+   
+    .logo {
+        width: 80%;
+    }
+    .header {
+        width: 60%;
+    }
+
+    .title {
+        justify-content: flex-start; 
+    }
+
+    .name {
+        justify-content: flex-start;
+    }
+
+    .hero-container {
+        height: initial;
+    }
+}
+
+@media only screen and (max-width: 463px) {
+    .top {
+       flex-direction: column;
+       align-content: center;
+    }
+
+    .logo-container {
+        width: 100%;
+    }
+
+    .logo {
+       max-width: 300px;
+       width: 80%;
+    }
+
+    .name {
+        width: 80%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header {
+        width: 100%;
+        
+    }
+    
+    .hero-container {
+        height: initial;
+    }
+
+    .title {
+        justify-content: center; 
+    }   
+     
+}
