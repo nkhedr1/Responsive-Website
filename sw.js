@@ -19,10 +19,9 @@ self.addEventListener('install', function(event) {
 		caches.open(staticCache).then(function(cache) {
 			return cache.addAll(
 				[
-					'/css/styles.css',
-					'/js/app.js',
-					'/index.html',
-					'/'
+					'css/styles.css',
+					'js/app.js',
+					'index.html',
 				]
 			);
 		})
