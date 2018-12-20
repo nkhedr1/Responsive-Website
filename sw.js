@@ -1,4 +1,4 @@
-let staticCache = 'my-Cache-4';
+let staticCache = 'my-Cache-5';
 
 self.addEventListener('activate', function(event) {
   event.waitUntil(
@@ -19,13 +19,9 @@ self.addEventListener('install', function(event) {
 		caches.open(staticCache).then(function(cache) {
 			return cache.addAll(
 				[
-					// 'css/styles.css',
-					// 'js/app.js',
-          // 'index.html',
-          'https://github.com/nkhedr1/My_Portfolio/blob/master/js/app.js',
-          'https://github.com/nkhedr1/My_Portfolio/blob/master/index.html',
-          'https://github.com/nkhedr1/My_Portfolio/blob/master/css/styles.css'
-
+					'css/styles.css',
+					'js/app.js',
+          'index.html',
 				]
 			);
 		})
@@ -39,6 +35,3 @@ self.addEventListener('fetch', function(event) {
     })
   );
 });
-
-
-https://github.com/nkhedr1/My_Portfolio/blob/master/js/app.js
