@@ -1,4 +1,4 @@
-let staticCache = 'my-Cache-2';
+let staticCache = 'my-Cache-3';
 
 self.addEventListener('activate', function(event) {
   event.waitUntil(
